@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Эксперименты с версткой</title>
+  </head>
+  <body>
+  	<main>
+		<nav>
+			<div class="side-nav">
+				<h3>Навигация</h3>
+				<ul>
+					<li><a href="#horizontal-menu">Горизонтальное меню. Варианты верстки.</a></li>
+					<li><a href="#sub-menu">Выпадающие меню.</a></li>
+					<li><a href="#decorative-effects">Декоративные эффекты. С использованием трансформации.</a></li>
+					<li><a href="">Пункт 4. Пока еще пустой.</a></li>
+					<li><a href="">Пункт 5. Пока еще пустой.</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<section class="experiments">
+			<h1>Эксперименты с версткой</h1>
+			<div class="first-block">
+				<p>Это моя тренировочная страница.</p>
+				<p>Здесь я, по мере прохождения обучения, буду пробовать что-то делать самостоятельно, экспериментировать. <strong>Цель - закреплять и развивать свои знания</strong>, на практических примерах смотреть как работают разные инструменты. Какие-то из наработок, возможно, пригодятся в дальнейшей деятельности. Так они всегда будут под рукой.</p>
+				<p>Пока не знаю, что из этого получится. <em>Главное - практика и еще раз практика!</em></p>
+			</div>
+
+			<article id="horizontal-menu">
+				<h2>Верстка горизонтального меню</h2>
+				<h3>Первый способ. Float: left</h3>
+				<div class="menu-ver-1 margin-bottom">
+					<ul>
+						<li class="menu-item">История</li>
+						<li class="menu-item">Производство</li>
+						<li class="menu-item">Ассортимент</li>
+						<li class="menu-item">Где купить</li>	
+					</ul>									
+				</div>
+
+				<h3>Второй способ. Display: inline-block</h3>
+				<div class="menu-ver-2 margin-bottom">
+					<ul>
+						<li class="menu-item"><a href="#history">История</a></li>
+						<li class="menu-item"><a href="#production">Производство</a></li>
+						<li class="menu-item"><a href="#assortment">Ассортимент</a></li>
+						<li class="menu-item"><a href="#buy">Где купить</a></li>
+					</ul>
+				</div>
+
+				<h3>Третий способ. Флексы</h3>
+				<div class="menu-ver-3 margin-bottom">
+					<ul>
+						<li class="menu-item">История</li>
+						<li class="menu-item">Производство</li>
+						<li class="menu-item">Ассортимент</li>
+						<li class="menu-item">Где купить</li>
+					</ul>
+				</div>
+			</article> 
+
+
+			<article id="sub-menu">
+				<h2>Менюшки с выпадающими подменю</h2>
+				<h3>Вертикальное меню</h3>
+				<div class="menu-ver-4 margin-bottom">
+					<ul>
+						<li><a href="#company">О компании</a></li>
+						<li><a href="#services">Услуги</a>
+							<ul class="sub-menu">
+								<li><a href="#1">Разработка</a></li>
+								<li><a href="#2">Продвижение</a></li>
+								<li><a href="#3">Контекст</a></li>
+							</ul>
+						</li>
+						<li><a href="#team">Сотрудники</a></li>
+						<li><a href="#contacts">Контакты</a></li>	
+					</ul>									
+				</div>
+
+				<h3>Горизонтальное меню</h3>
+				<div class="menu-ver-5 margin-bottom">
+					<ul>
+						<li><a href="#company">О компании</a></li>
+						<li><a href="#services">Услуги</a>
+							<ul class="sub-menu">
+								<li><a href="#1">Разработка</a></li>
+								<li><a href="#2">Продвижение</a></li>
+								<li><a href="#3">Контекст</a></li>
+							</ul>
+						</li>
+						<li><a href="#team">Сотрудники</a></li>
+						<li><a href="#contacts">Контакты</a></li>	
+					</ul>									
+				</div>
+			</article>
+
+
+			<article id="decorative-effects">
+				<h2>Декоративные эффекты. С использованием трансформации.</h2>
+				<h3>Выдвигающееся описание.</h3>
+				<div class="work-area-1">
+					<a class="caption-link" href="#" data-title="Капоэйра" data-description="Это бразильское боевое искусство. Здесь поединок - это игра, основанная на взаимном уважении партнеров. Важные качества - это ловкость, хитрость и контроль движений.">
+						<img src="files/capo_img.gif" alt="Капоэйра" width="340" height="340">
+					</a>
+				</div>
+
+				<h3>Всплывающее подчеркивание.</h3>
+				<div class="effect-1">
+					<a href="#">
+						Апельсин
+					</a>
+				</div>
+
+				<h3>Щит супергероя &laquo;Завтрамена&raquo;.</h3>
+				<div class="tomorrow-area">
+
+					<div class="shield">
+						<div class="shield-logo"></div>
+					</div>
+
+				</div>
+
+				<h3>Мини-галерея.</h3>
+				<div class="slider-area">
+					<h4>Галерея &laquo;Джунгли&raquo;</h4>
+					<div class="slider">
+						<input id="btn-1" type="radio" name="slider_controll" checked>
+						<input id="btn-2" type="radio" name="slider_controll">
+						<input id="btn-3" type="radio" name="slider_controll">
+						<div class="slider-controlls">
+							<label for="btn-1"></label>
+							<label for="btn-2"></label>
+							<label for="btn-3"></label>
+						</div>
+						<div class="slider-inner">
+							<div class="slider-slides">
+								<img src="files/jungle_1.gif" width="400" heigth="300" alt="Тукан">
+								<img src="files/jungle_2.gif" width="400" heigth="300" alt="Хамелеон">
+								<img src="files/jungle_3.gif" width="400" heigth="300" alt="Ленивец">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</article>
+		</section> 
+  	</main>
+  </body>
+</html>
